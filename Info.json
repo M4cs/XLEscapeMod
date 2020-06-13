@@ -1,0 +1,11 @@
+{
+  "Id": "XLEscapeMod",
+  "DisplayName": "Macs' XLEscapeMod",
+  "Author": "Macs",
+  "Version": "1.0",
+  "ManagerVersion": "0.15.0",
+  "AssemblyName": "XLEsc.dll",
+  "EntryMethod": "XLEsc.Main.Load",
+  "HomePage": "https://twitter.com/maxbridgland",
+  "Repository": ""
+}
