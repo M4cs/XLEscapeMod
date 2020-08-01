@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XLEsc", "XLEsc.csproj", "{03E03881-5DC8-4206-8EC9-8C3754367913}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotMyFeet", "..\NotMyFeet\NotMyFeet.csproj", "{F60EDC36-5A56-4AA0-B87A-1C5E2A1A1434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicMod", "..\MusicController\MusicMod.csproj", "{C4FD85C7-EB9F-4614-9676-0DEFD81842E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{03E03881-5DC8-4206-8EC9-8C3754367913}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03E03881-5DC8-4206-8EC9-8C3754367913}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03E03881-5DC8-4206-8EC9-8C3754367913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F60EDC36-5A56-4AA0-B87A-1C5E2A1A1434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60EDC36-5A56-4AA0-B87A-1C5E2A1A1434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60EDC36-5A56-4AA0-B87A-1C5E2A1A1434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F60EDC36-5A56-4AA0-B87A-1C5E2A1A1434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4FD85C7-EB9F-4614-9676-0DEFD81842E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4FD85C7-EB9F-4614-9676-0DEFD81842E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4FD85C7-EB9F-4614-9676-0DEFD81842E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4FD85C7-EB9F-4614-9676-0DEFD81842E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

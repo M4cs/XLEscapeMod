@@ -1,6 +1,6 @@
 ﻿using System;
 using UnityModManagerNet;
-using XLShredLib;
+using UnityEngine;
 using Harmony12;
 using System.Reflection;
 
@@ -9,16 +9,11 @@ namespace XLEsc
     class Main
     {
         public static bool enabled;
-        public static String modId;
-        public static UnityModManager.ModEntry modEntry;
 
         private static EscapeMod escapeMod;
 
         static void Load(UnityModManager.ModEntry modEntry)
         {
-            Main.modEntry = modEntry;
-            Main.modId = modEntry.Info.Id;
-
             modEntry.OnToggle = OnToggle;
         }
 
@@ -30,7 +25,8 @@ namespace XLEsc
 
             if (enabled)
             {
-                escapeMod = ModMenu.Instance.gameObject.AddComponent<EscapeMod>();
+                escapeMod = new GameObject().AddComponent<EscapeMod>();
+                GameObject.DontDestroyOnLoad(escapeMod);
                 harmonyInstance = HarmonyInstance.Create(modEntry.Info.Id);
                 harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
 
@@ -39,7 +35,7 @@ namespace XLEsc
                 harmonyInstance.UnpatchAll(harmonyInstance.Id);
                 if (escapeMod != null)
                 {
-                    UnityEngine.Object.Destroy(ModMenu.Instance.GetComponent<EscapeMod>());
+                    GameObject.DestroyImmediate(escapeMod);
                 }
             }
             return true;

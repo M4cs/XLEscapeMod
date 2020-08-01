@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using XLShredLib;
 
 namespace XLEsc
 {
@@ -20,7 +19,8 @@ namespace XLEsc
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 shouldDisplayMenu = true;
-                ModMenu.Instance.ShowCursor(Main.modId);
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
             }
         }
 
@@ -41,7 +41,8 @@ namespace XLEsc
             if (GUI.Button(new Rect(10, 35, 100, 60), "NO"))
             {
                 shouldDisplayMenu = false;
-                ModMenu.Instance.HideCursor(Main.modId);
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
             }
             if (GUI.Button(new Rect(110, 35, 100, 60), "YES"))
             {
